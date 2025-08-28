@@ -51,8 +51,8 @@ resource "aws_subnet" "private" {
   
   availability_zone = local.az_names[count.index]
   
-  tags = merge(
-    var.private_subnet_tags
+  tags = merge (
+    var.private_subnet_tags,
     local.common_tags,
     {
         Name = "${var.project}-${var.environment}-private-${local.az_names[count.index]}"
