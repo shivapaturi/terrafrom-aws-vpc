@@ -8,3 +8,4 @@ This module is developed by joindevops company. Projects inside joindevops follo
 
 ## Outputs
 * vpc_id - Exports VPC ID created
+* sg_id - Exports SG ID created
